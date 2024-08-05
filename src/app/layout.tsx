@@ -15,8 +15,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es" className="scroll-smooth">
       <body className={inter.className}>{children}</body>
+      <footer>
+        <p className="text-center text-white text-sm">
+          Made with ❤️ by{" "}
+          <a
+            href="https://github.com/emacuello"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Emanuel Cuello
+          </a>
+        </p>
+      </footer>
     </html>
   );
 }
